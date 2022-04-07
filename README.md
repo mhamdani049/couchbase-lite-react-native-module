@@ -1,7 +1,7 @@
 # Overview
 A reference implementation of a [React Native Module](https://reactnative.dev/docs/native-modules-intro) for couchbase lite on iOS and Android.
 
-**:NOTE:** The plugin is not officially supported by Couchbase and there are no guarantees that the APIs exported by the module are up to date with the latest version of Couchbase Lite. The module implementation is available as an open source reference implementation for developers to use as a starting point and contribute as needed
+> **⚠ NOTE:** The plugin is not officially supported by Couchbase and there are no guarantees that the APIs exported by the module are up to date with the latest version of Couchbase Lite. The module implementation is available as an open source reference implementation for developers to use as a starting point and contribute as needed
 
 React Native Modules allow mobile apps written in React Native to access native platform APIs. The sample module exports a relevant subset of native Couchbase Lite API functionality and makes it available to React native JS apps. You can extend this module to expose otherAPIs per [module development guide](https://reactnative.dev/docs/native-modules-ios).
 
@@ -17,7 +17,7 @@ React Native Modules allow mobile apps written in React Native to access native 
 
 ## Sample App
 
-A React Native app that demonstrates core database, CRUD, query and sync functions of Couchbase Lite using the plugin is available [here](). 
+An app that demonstrates core database, CRUD, query and sync functions of Couchbase Lite using the plugin is available [here](https://github.com/couchbaselabs/userprofile-couchbase-mobile-reactnative). 
 
 
 ## Exported APIs
