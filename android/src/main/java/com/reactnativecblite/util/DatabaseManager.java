@@ -18,7 +18,6 @@ import com.couchbase.lite.DatabaseChange;
 import com.couchbase.lite.DatabaseChangeListener;
 import com.couchbase.lite.DatabaseConfiguration;
 import com.couchbase.lite.Document;
-import com.couchbase.lite.EncryptionKey;
 import com.couchbase.lite.FullTextIndexConfiguration;
 import com.couchbase.lite.ListenerToken;
 import com.couchbase.lite.LogDomain;
@@ -112,10 +111,6 @@ public class DatabaseManager {
 
         if (directory != null && !directory.equals("")) {
             dbConfig.setDirectory(directory);
-        }
-
-        if (encryptionKey != null && !encryptionKey.equals("")) {
-            dbConfig.setEncryptionKey(new EncryptionKey(encryptionKey));
         }
 
         return dbConfig;
@@ -838,10 +833,6 @@ public class DatabaseManager {
                     } else {
                         config.setDocumentIDs(null);
                     }
-                }
-
-                if (dictionary.hasKey("acceptOnlySelfSignedServerCertificate")) {
-                    config.setAcceptOnlySelfSignedServerCertificate(dictionary.getBoolean("acceptOnlySelfSignedServerCertificate"));
                 }
 
                 if (dictionary.hasKey("pinnedServerCertificateUri")) {
